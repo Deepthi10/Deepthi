@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="7dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="10dp"
+    android:padding="10dp">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:background="@color/blue"
+            android:layout_weight="0.001" />
+
+        <ImageView
+                android:id="@+id/postdp"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"/>
+            <LinearLayout android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.80">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvblogheadline"
+                    android:textSize="15dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/tvblogpostid"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/tvbloguser_id"
+
+            />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvblogcontent"
+
+            android:padding="5dp"
+            android:gravity="left"
+            android:ellipsize="end"
+            android:maxLines="2"
+            />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_person_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="5dp"
+android:layout_weight="1"
+                        />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvbloguname"
+                    android:paddingTop="25dp"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1"
+                    />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_bookmark_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"
+                        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvblogdate"
+            android:layout_weight="1"
+android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+
+          />
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
