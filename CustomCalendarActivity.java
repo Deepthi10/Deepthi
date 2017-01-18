@@ -1,4 +1,3 @@
-package org.apnplace;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -231,7 +230,7 @@ public class CustomCalendarActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             String urlParameters = "";
             System.out.println("Logindetails events:" + urlParameters);
-            return httpURLConnectionGet.call("http://apnplace.org/admin/getnewcalendarevents.php?type=fetch", urlParameters);
+            return httpURLConnectionGet.call("http://some.org/admin/getnewcalendarevents.php?type=fetch", urlParameters);
 
         }
 
