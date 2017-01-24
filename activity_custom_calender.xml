@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="org.apnplace.CustomCalendarActivity">
+
+    <com.imanoweb.calendarview.CustomCalendarView
+        android:id="@+id/customcal"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@color/white"
+        app:calendarBackgroundColor="@color/white"
+        app:calendarTitleTextColor="@color/black"
+        app:currentDayOfMonthColor="#ff0000"
+        app:dayOfMonthTextColor="@color/black"
+        app:selectedDayTextColor="@color/white"
+        app:dayOfWeekTextColor="@color/black"
+        app:disabledDayTextColor="@color/black"
+        app:selectedDayBackgroundColor="@color/colorPrimary"
+        app:titleLayoutBackgroundColor="@color/white"
+        app:weekLayoutBackgroundColor="@color/white"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/defaultText"
+        android:paddingTop="20dp"
+        android:textSize="24sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customlist"
+        >
+
+    </ListView>
+</LinearLayout>
